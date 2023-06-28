@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIKE BUTTON</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <header class="encabezado"><h1>Network</h1></header>
+    <H2 class="second-titulo">Your Feed</H2>
+    <div class="container">
+        <aside class="left">
+            <div class="img-container">
+                <img src="Icons/user-circle.png" alt="Profile picture" class="i-mg">
+                <a href="#">Add an avatar</a>
+                <h2>James Doe</h2>
+            </div>
+        </aside>
+        <div class="right">
+            <main class="card">
+                <header class="top">
+                    <h2 class="d-inl">Some User</h2>
+                    <div class="r-side">
+                        <p class="d-inl likes"><span class="counter">1</span> like(s)</p>
+                        <button class="button" onclick="sumar(this)">Like</button>
+                    </div>
+                </header>
+                <div class="text">
+                    <p>I just set up this new discord bot, let me know what you all think.<a href="#">link</a></p>
+                </div>
+            </main>
+            <main class="card">
+                <header class="top">
+                    <h2 class="d-inl">Nichole K.</h2>
+                    <div class="r-side">
+                        <p class="d-inl likes"><span class="counter">6</span> like(s)</p>
+                        <button class="button" onclick="sumar(this)">Like</button>
+                    </div>
+                </header>
+                <div class="text">
+                    <p>Just finished my <a href="#">next comic</a>, check it out</p>
+                </div>
+            </main>
+            <main class="card">
+                <header class="top">
+                    <h2 class="d-inl">Jim R</h2>
+                    <div class="r-side">
+                        <p class="d-inl likes"><span class="counter">2</span> like(s)</p>
+                        <button class="button" onclick="sumar(this)">Like</button>
+                    </div>
+                </header>
+                <div class="text">
+                    <p>I can't stop listening to the <a href="#">new album</a>. Who else is liking it?</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
