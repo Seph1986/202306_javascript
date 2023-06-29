@@ -14,15 +14,18 @@ function editName(){
 function remove(element){
   let eliminar = element.parentElement.parentElement.remove();
 
-  let contador = + document.querySelector(".notification").innerText;
+
+  let etiqueta = document.querySelector(".notification")
+  let contador = + etiqueta.innerText;
   contador --
-  let retornar = (document.querySelector(".notification").innerText = contador)
+  let retornar = (etiqueta.innerText = contador)
 
   if(element.classList.contains("b-accept")){
-    let numero = + document.querySelector(".not-conect").innerText;
+    let valor = document.querySelector(".not-conect");
+    let numero = + valor.innerText;
     numero ++
     
-    return document.querySelector(".not-conect").innerText = numero;
+    return valor.innerText = numero;
   }
 
   return [eliminar, retornar]
