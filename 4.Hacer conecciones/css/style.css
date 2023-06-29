@@ -1,0 +1,322 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.top-box{
+    display: flex;
+    color: white;
+    background-color: black;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+}
+
+.top-container{
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+
+.lista{
+    display: inline;
+    margin-left: 15px
+    
+}
+
+.lista a{
+    color: white;
+    text-decoration: none;
+}
+
+.b-list{
+    font-weight: bold;
+}
+
+.top-button{
+    color: white;
+    height: 30px;
+    width: 120px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgb(54, 169, 184);
+    border: none;
+}
+
+/* Para arriba es todo Top Container */
+
+/* Para arriba es todo Main */
+
+.main-con{
+    display: flex;
+}
+
+.main{
+    flex:2;
+    height: 630px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.m-top-card{
+    height: 400px;
+    width: 700px;
+    background-color: white;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.m-header{
+    flex: 1;
+    background-color: rgb(54, 169, 184);
+}
+
+.m-img-container{
+    background-color: white;
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    position: absolute;
+    top:160px;
+    left: 120px;
+    border:2px solid rgb(193, 193, 193);
+}
+
+.m-img-container img{
+    height: 100px;
+    margin:5px;
+    border-radius: 50%;
+}
+
+.m-info-container{
+    flex: 2;
+    border: 5px solid rgb(193, 193, 193);
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 50px;
+    padding-bottom: 5px;
+}
+
+.location{
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.section{
+    font-size: 20px;
+}
+.primario{
+    margin-bottom: 20px;
+}
+
+.m-info-container img{
+    height: 20px;
+}
+
+/* De aca para arriba main card */
+
+.m-btm-card{
+    background-color: white;
+    margin-top: 30px;
+    height: 150px;
+    width: 690px;
+    border: 5px solid rgb(193, 193, 193);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.btm-card-header{
+    background-color: rgb(53, 53, 53);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    height: 40px;
+    padding-top: 10px;
+    padding-left: 50px;
+    flex:1
+}
+
+.btm-card-main{
+    flex: 2;
+     margin-top: 20px;
+     margin-left: 50px;
+}
+
+.btm-parrafo{
+    color:rgb(91, 91, 91);
+}
+
+.btm-card-footer{
+    flex:1;
+    margin-left: 50px;
+}
+
+/* De aca para arriba Main footer */
+
+/* Para abajo es toda la parte del aside */
+
+.aside{
+    flex:1;
+    background-color: white;
+    height: 630px;
+}
+
+.a-top-card{
+    height: 200px;
+    width: 300px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: stretch
+}
+
+.a-top-header{
+    flex: 1;
+    display: flex;
+    background-color: rgb(53, 53, 53);
+    color: white;
+    font-size: 20px;
+    align-items: center;
+}
+
+.notification{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    margin-left: 20px;
+    color: rgb(53, 53, 53);
+    background-color: white;
+    text-align: center;
+}
+
+.c-req{
+    margin-left: 15px;
+}
+
+.a-top-section{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid rgb(91, 91, 91);
+    border-top: none;
+}
+
+.part{
+    flex:1;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center 
+}
+
+
+.a-img-container img {
+    height: 50px;
+    border-radius: 50%;
+    border: solid black 2px
+}
+
+.b-accept{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: url("../icons/accept-circle.png");
+    background-size:contain ;
+    cursor: pointer;
+}
+
+.b-accept:active{
+    transform: scale(0.9);
+}
+
+.b-denie{
+    height: 40px;
+    width: 40px;
+    background-color: red;
+    border-radius: 50%;
+    background: url("../icons/close-circle.png");
+    background-size:contain ;
+    cursor: pointer;
+}
+
+.b-denie:active{
+    transform: scale(0.9);
+}
+
+.name{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+/* Aside bottom */
+
+.a-btm-card{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    margin-top: 30px;
+    background-color: green;
+}
+
+
+.a-btm-header{
+    flex: 2;
+    display: flex;
+    background-color: rgb(53, 53, 53);
+    color: white;
+    font-size: 20px;
+    align-items: center;
+}
+
+.not-conect{
+    height: 25px;
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 20px;
+    color: rgb(53, 53, 53);
+    background-color: white;
+    text-align: center;
+}
+
+.ppl-connections{
+    display: flex;
+    flex-direction: column;
+    flex:8;
+    border:2px solid rgb(91, 91, 91);
+    
+}
+
+.part2{
+    flex:1;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 40px;
+}
+
+.a-btm-card-footer{
+    flex:1;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    background-color: white;
+    border:2px solid rgb(91, 91, 91);
+}
+
+.name2{
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 15px;
+}

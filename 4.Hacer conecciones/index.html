@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de perfil</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="top-box">
+        <div class="top-container">
+            <div>
+                <h1 class="top-title">Profile</h1>
+            </div>
+            <nav class="top-nav">
+                <ul class="des-lis">
+                    <li class="lista"><a href="#">Home</a></li>
+                    <li class="lista b-list"><a href="#" >My Profile</a></li>
+                    <li class="lista"><a href="#">Find Connections</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="top-button-box">
+            <button class="top-button">Sign Out</button>
+        </div> 
+    </header>
+    <div class="main-con">
+        <main class="main">
+            <div class="m-top-card">
+                <header class="m-header"></header>
+                <div class="m-img-container">
+                    <img src="images/jane-m.jpg" alt="Foto de perfil">
+                </div>
+                <div class="m-info-container">
+                    <h2 id="nameProfile" class="primario">Jane Doe</h2>
+                    <div class="primario location">
+                        <img src="icons/map-marker.png" alt="Map Marker">
+                        Seattle
+                    </div>
+                    <section class="primario-section">
+                        Developer | Engineer | Problem Solver
+                        <br>
+                        Master of shadows and the Internet!
+                    </section>
+                    <footer class="primario">
+                        <img src="icons/gear.png" alt="Gear Icon">
+                        <span><a href="#" onclick="editName()">edit profile</a></span>
+                    </footer>
+                </div>
+            </div>
+            <div class="m-btm-card">
+                <header class="btm-card-header">Education</header>
+                <div class="btm-card-main" >
+                    <h3>Coding Dojo - Full Stack Bootcamp</h3>
+                    <p class="btm-parrafo">Dec 2019 - Mar 2020</p>
+                </div>
+                <div class="btm-card-footer">Triple black belt in Python, MERN, and C#...</div>
+            </div>
+        </main>
+        <aside class="aside">
+            <div class="a-top-card">
+                <header class="a-top-header">
+                    <div class="notification">2</div>
+                    <div class="c-req">Conection Requests</div>
+                </header>
+                <section class="a-top-section">
+                    <div class="part">
+                        <div class="a-img-container">
+                            <img src="images/todd-s.jpg" alt="Friend">
+                        </div>
+                        <div class="name">Todd E</div>
+                        <div>
+                            <button class="b-accept delete" onclick="remove(this)"></button>
+                            <button class="b-denie delete" onclick="remove(this)"></button>
+                        </div>
+                    </div>
+                    <div class="part">
+                        <div class="a-img-container">
+                            <img src="images/phil-s.jpg" alt="Friend">
+                        </div>
+                        <div class="name">Phil K</div>
+                        <div>
+                            <button class="b-accept" onclick="remove(this)"></button>
+                            <button class="b-denie"onclick="remove(this)"></button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="a-btm-card">
+                <header class="a-btm-header">
+                    <div class="not-conect">500</div>
+                    <div class="c-req">Your Connections</div>
+                </header>
+                <div class="ppl-connections">
+                    <div class="part2">
+                        <div class="a-img-container">
+                            <img src="images/adrien-s.jpg" alt="Friend">
+                        </div>
+                        <div class="name2">Adrien D.</div>
+                    </div>
+                    <div class="part2">
+                        <div class="a-img-container">
+                            <img src="images/anne-s.jpg" alt="Friend">
+                        </div>
+                        <div class="name2">Anne J.</div>
+                    </div>
+                    <div class="part2">
+                        <div class="a-img-container">
+                            <img src="images/alayne-s.jpg" alt="Friend">
+                        </div>
+                        <div class="name2">Alayne T.</div>
+                    </div>
+                    <div class="part2">
+                        <div class="a-img-container">
+                            <img src="images/arry-s.jpg" alt="Friend">
+                        </div>
+                        <div class="name2">Arry Y.</div>
+                    </div>
+                </div>
+                <footer class="a-btm-card-footer">
+                    <a href="#">View More</a>
+                </footer>
+            </div>
+        </aside>
+    </div>
+    <script src="JS/script.js"></script>
+</body>
+</html>
