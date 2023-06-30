@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiempo Dojo</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="h-tittle">
+            <h1>DojoWeather</h1>
+        </div>
+        <div>
+            <ul>
+                <a href="#" onclick="wAlert()">Burbank</a>
+                <a href="#" onclick="wAlert()">Chicago</a>
+                <a href="#" onclick="wAlert()">Dallas</a>
+            </ul>
+        </div>
+    </header>
+    <div class="main-container">
+        <header class= "m-header">
+            <h2>San Jose</h2>
+            <div>
+                <p>show temperature in </p>
+                <select class="selector" onchange="convertTemp(this)">
+                    <option>°C</option>
+                    <option>°F</option>
+                </select>
+            </div>
+        </header>
+        <hr>
+        <main class="main-info">
+            <section class="m-card">
+                <div class="top">
+                    <h4>Today</h4>
+                </div>
+                <div class="mid">
+                    <img src="assets/some_rain.png" alt="Rain image">
+                    <p>some rain</p>
+                </div>
+                <div class="temp">
+                    <p class="max red">24</p><span>°</span>
+                    <p class="min blue">18</p><span>°</span>
+                </div>
+            </section>
+            <section class="m-card">
+                <div class="top">
+                    <h4>Tomorrow</h4>
+                </div>
+                <div class="mid">
+                    <img src="assets/some_sun.png" alt="Rain image">
+                    <p>some sun</p>
+                </div>
+                <div class="temp">
+                    <p class="max red">27</p><span>°</span>
+                    <p class="min blue">19</p><span>°</span>
+                </div>
+            </section>
+            <section class="m-card">
+                <div class="top">
+                    <h4>Friday</h4>
+                </div>
+                <div class="mid">
+                    <img src="assets/some_clouds.png" alt="Rain image">
+                    <p>some clouds</p>
+                </div>
+                <div class="temp">
+                    <p class="max red">21<span>°</span></p>
+                    <p class="min blue">16<span>°</span></p>
+                </div>
+            </section>
+            <section class="m-card">
+                <div class="top">
+                    <h4>Saturday</h4>
+                </div>
+                <div class="mid">
+                    <img src="assets/some_sun.png" alt="Rain image">
+                    <p>some sun</p>
+                </div>
+                <div class="temp">
+                    <p class="max red">26</p><span>°</span>
+                    <p class="min blue">21</p><span>°</span>
+                </div>
+            </section>
+        </main>
+        <div class="cookie-card">
+            <img src="assets/cookie.png" alt="Cookie image">
+            <div class="cookie-text">
+                <H4>Stop! Cookie Time</H4>
+                <p>We use cookies (sadly not the edible) to personalize <br>
+                     content and ads, to provide social media features and to <br>
+                     analyse our traffic. <a href="#">Read more...</a></p>
+            </div>
+            <div class="btn-container">
+                <button onclick="cokiesAccept()">I accept</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
